@@ -1,0 +1,13 @@
+server:
+  port: 3002
+spring:
+  application:
+    # 可根据自己的业务命名
+    name: eureka-client1
+eureka:
+  client:
+    service-url:
+        defaultZone: http://eureka-server1:3001/eureka/
+  instance:
+    instance-id: 业务模块1-3002
+    prefer-ip-address: true
