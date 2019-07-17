@@ -1,14 +1,14 @@
 server:
-  port: 5001
+  port: 5002
 spring:
   application:
-    name: ribbon
+    name: feign
 eureka:
   client:
     service-url:
         defaultZone: http://eureka-server1:3001/eureka/,http://eureka-server2:3002/eureka/
   instance:
-    instance-id: Ribbon
+    instance-id: Feign
 eureka-client:
   ribbon:
     NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
