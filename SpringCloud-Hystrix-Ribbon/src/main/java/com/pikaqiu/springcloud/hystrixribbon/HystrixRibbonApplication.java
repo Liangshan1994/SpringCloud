@@ -20,7 +20,7 @@ public class HystrixRibbonApplication {
     @Bean
     @LoadBalanced
     public RestTemplate restTemplate(){
-      return new RestTemplate();
+        return new RestTemplate();
     }
 
 }
