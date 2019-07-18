@@ -13,8 +13,6 @@ import org.springframework.web.client.RestTemplate;
 @RestController
 public class MyTestController {
 
-    private String service = "http://eureka-client";
-
     @Autowired
     private FeignService feignService;
 
