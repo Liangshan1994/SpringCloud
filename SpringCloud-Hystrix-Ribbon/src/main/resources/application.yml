@@ -1,0 +1,11 @@
+server:
+  port: 5003
+spring:
+  application:
+    name: Hystrix-Ribbon
+eureka:
+  client:
+    service-url:
+        defaultZone: http://eureka-server1:3001/eureka/,http://eureka-server2:3002/eureka/
+  instance:
+    instance-id: Hystrix-Ribbon
