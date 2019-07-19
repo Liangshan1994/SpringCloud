@@ -1,11 +1,11 @@
 server:
-  port: 5007
+  port: 4004
 spring:
   application:
-    name: service-blog-5005
+    name: service-blog
 eureka:
   client:
     service-url:
         defaultZone: http://eureka-server1:3001/eureka/
   instance:
-    instance-id: Service-Blog
+    instance-id: 博客服务-4004
