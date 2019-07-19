@@ -1,0 +1,11 @@
+server:
+  port: 5006
+spring:
+  application:
+    name: service-user-5005
+eureka:
+  client:
+    service-url:
+        defaultZone: http://eureka-server1:3001/eureka/
+  instance:
+    instance-id: Service-User
