@@ -1,0 +1,19 @@
+server:
+  port: 5005
+spring:
+  application:
+    name: zuul
+eureka:
+  client:
+    service-url:
+        defaultZone: http://eureka-server1:3001/eureka/
+  instance:
+    instance-id: Zuul路由服务-5005
+zuul:
+  routes:
+    service-user:
+        path: /user/**
+        serviceId: service-user
+    service-blog:
+        path: /blog/**
+        serviceId: service-blog
