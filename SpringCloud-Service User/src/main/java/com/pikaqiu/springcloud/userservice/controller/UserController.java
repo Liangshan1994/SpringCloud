@@ -9,25 +9,25 @@ import org.springframework.web.bind.annotation.RestController;
  * @date 2019/7/19
  */
 @RestController
-@RequestMapping("/user/")
+@RequestMapping("/api/user")
 public class UserController {
 
-    @RequestMapping(value = "getUser")
+    @RequestMapping(value = "/getUser", method = RequestMethod.GET)
     public String getUser(String userId){
         return "查找用户：" + userId;
     }
 
-    @RequestMapping(value = "addUser", method = RequestMethod.POST)
+    @RequestMapping(value = "/addUser", method = RequestMethod.POST)
     public String addUser(String userName){
         return "新增用户姓名：" + userName;
     }
 
-    @RequestMapping(value = "updateUser", method = RequestMethod.PUT)
+    @RequestMapping(value = "/updateUser", method = RequestMethod.PUT)
     public String updateUser(String userName){
         return "更新用户姓名：" + userName;
     }
 
-    @RequestMapping(value = "deleteUser", method = RequestMethod.DELETE)
+    @RequestMapping(value = "/deleteUser", method = RequestMethod.DELETE)
     public String deleteUser(String userId){
         return "删除用户：" + userId;
     }
