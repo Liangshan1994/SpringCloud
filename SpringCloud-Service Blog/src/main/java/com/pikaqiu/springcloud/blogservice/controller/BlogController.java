@@ -9,25 +9,25 @@ import org.springframework.web.bind.annotation.RestController;
  * @date 2019/7/19
  */
 @RestController
-@RequestMapping("/blog/")
+@RequestMapping("/api/blog")
 public class BlogController {
 
-    @RequestMapping(value = "getBlog", method = RequestMethod.GET)
+    @RequestMapping(value = "/getBlog", method = RequestMethod.GET)
     public String getBlog(String blogId){
         return "查找博客：" + blogId;
     }
 
-    @RequestMapping(value = "addBlog", method = RequestMethod.POST)
+    @RequestMapping(value = "/addBlog", method = RequestMethod.POST)
     public String addBlog(String blogName){
         return "新增博客标题：" + blogName;
     }
 
-    @RequestMapping(value = "updateBlog", method = RequestMethod.PUT)
+    @RequestMapping(value = "/updateBlog", method = RequestMethod.PUT)
     public String updateBlog(String blogName){
         return "更新博客标题：" + blogName;
     }
 
-    @RequestMapping(value = "deleteBlog", method = RequestMethod.DELETE)
+    @RequestMapping(value = "/deleteBlog", method = RequestMethod.DELETE)
     public String deleteBlog(String blogId){
         return "删除博客：" + blogId;
     }
