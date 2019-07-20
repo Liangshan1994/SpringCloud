@@ -12,8 +12,10 @@ eureka:
 zuul:
   routes:
     service-user:
-        path: /user/**
+        path: /api/user/**
         serviceId: service-user
+        stripPrefix: false
     service-blog:
-        path: /blog/**
+        path: /api/blog/**
         serviceId: service-blog
+        stripPrefix: false
