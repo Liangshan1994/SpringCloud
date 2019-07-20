@@ -1,0 +1,13 @@
+server:
+  port: 5006
+spring:
+  application:
+    name: config
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/Liangshan1994/SpringCloud
+          search-paths: SpringCloud-Config-Repo
+          username:
+          password:
