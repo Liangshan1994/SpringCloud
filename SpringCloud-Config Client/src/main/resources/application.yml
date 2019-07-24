@@ -1,0 +1,16 @@
+server:
+  port: 5007
+spring:
+  application:
+    name: config-client
+  cloud:
+    config:
+      uri: http://127.0.0.1:5006/
+      name: config
+      profile: dev
+eureka:
+  client:
+    service-url:
+        defaultZone: http://eureka-server1:3001/eureka/
+  instance:
+    instance-id: 配置中心客户端-5007
