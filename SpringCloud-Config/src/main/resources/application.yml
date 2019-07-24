@@ -11,3 +11,9 @@ spring:
           search-paths: SpringCloud-Config-Repo
           username:
           password:
+eureka:
+  client:
+    service-url:
+        defaultZone: http://eureka-server1:3001/eureka/
+  instance:
+    instance-id: 配置中心-5006
