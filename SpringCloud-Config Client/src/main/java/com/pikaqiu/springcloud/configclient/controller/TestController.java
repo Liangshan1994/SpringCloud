@@ -1,6 +1,7 @@
 package com.pikaqiu.springcloud.configclient.controller;
 
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -9,10 +10,10 @@ import org.springframework.web.bind.annotation.RestController;
  * @date 2019/7/24
  */
 @RestController
-@RequestMapping("/config")
+@RefreshScope
 public class TestController {
 
-    @Value("${form}")
+    @Value("${hello}")
     private String hello;
 
     @RequestMapping("/test")
