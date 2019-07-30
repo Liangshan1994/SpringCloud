@@ -1,0 +1,15 @@
+spring:
+  cloud:
+    config:
+      name: config
+      profile: dev
+      label: master
+      discovery:
+        enabled: true
+        service-id: config-server
+eureka:
+  client:
+    service-url:
+        defaultZone: http://eureka-server1:3001/eureka/
+  instance:
+    instance-id: 配置中心客户端(集合Bus)-5008

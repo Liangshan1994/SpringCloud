@@ -1,0 +1,15 @@
+server:
+  port: 5018
+spring:
+  application:
+    name: config-client-bus
+  rabbitmq:
+    port: 5672
+    host: 127.0.0.1
+    username: liangshan
+    password: 19940420
+management:
+  endpoints:
+      web:
+        exposure:
+          include: health, info, refresh, bus-refresh
