@@ -1,5 +1,5 @@
 server:
-  port: 5018
+  port: 5008
 spring:
   application:
     name: config-client-bus
